@@ -21,7 +21,7 @@ I will use the Ubuntu Linux one in this instruction.
 
 ![](img/ami.png)
 
-Then you can select the instance type you want, if you want to run training model on GPU, you can select G2 instance or P2 instance. As MXNet can support CPU model, it is OK for you to select CPU instance for testing.
+Then you can select the instance type you want, if you want to run training model on GPU, you can select G2 instance or P2 instance. As MXNet can support CPU model, it is OK for you to select CPU instance for testing. And you can select small instances like t2.micro to decrease the cost of your testing.
 
 The following is how you select the instance type:
 
@@ -52,7 +52,15 @@ After the instance was launched, you can see the status of the instance in the E
 
 Select the EC2 instance you just created, make sure that the "Instance state" is "running" and "Status Check" is "2/2 checks passed".
 
-Copy the public DNS name of the instance, use the following command to connect to the the instance:
+Then you can start to connect to your instance with SSH. If you are using Windows, PuTTY is a common used tools as SSH client. If you are using Mac or Linux, you can use the ssh command in your terminal.
+
+For Windows users, please refer to the following link for details about connecting to EC2 with SSH.
+<http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html>
+
+For Mac users, please refer to the following link for details.
+<http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html>
+
+For instance, if your are using Mac, copy the public DNS name of the instance, use the following command to connect to the the instance:
 
 	ssh -i ~/<pem file name> ubuntu@<public DNS name of the instance>
 	
@@ -122,7 +130,7 @@ And you can clone current git project for other samples:
 	
 After you clone sample project, go to the directory of the project and start Jupyter server.
 
-Then you can access it from your browser with the following UR:
+Then you can access it from your browser with the following URL:
 
 <http://Public_DNS_name_of_EC2:9081?token=xxxx>
 
@@ -133,6 +141,8 @@ The following is what you expect to see:
 ![](img/jupyter.png)
 
 You are ready to run these notebooks now.
+
+
 
 
 
