@@ -1,6 +1,6 @@
 ## It is a toturial of Deep Learning
 
-Clone this repository to any machine with MXNet and jupyter installed.
+Clone this repository to any machine with MXNet/Tensorflow and jupyter installed.
 
 Go to the directory of this toturial, start jupyter notebook with the following code:
 
