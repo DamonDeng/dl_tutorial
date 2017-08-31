@@ -1,4 +1,4 @@
-## It is a toturial of MXNet
+## It is a toturial of Deep Learning
 
 Clone this repository to any machine with MXNet and jupyter installed.
 
